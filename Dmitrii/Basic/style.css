@@ -11,10 +11,9 @@
   }
 }
 /* Tablet */
-@media screen and (min-width: 501px) and (max-width: 768px) {
-  .hero {
+@media screen and (max-width: 768px) {
+  .hero .shawcase {
     margin-top: 40px;
-    height: 120px;
   }
   .hero .nav {
     flex-direction: column;
@@ -71,80 +70,60 @@
     background: url("pic_9.jpg") no-repeat center center/cover;
   }
   body footer {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: 110px;
-    padding: 20px 50px 50px 20px;
+    padding: 20px 10px 20px 10px;
   }
 }
 /* Smartphones */
 @media (max-width: 500px) {
-  .hero {
-    margin-top: 40px;
-    height: 120px;
-  }
-  .hero .nav {
-    flex-direction: column;
-    justify-content: center;
-    height: 110px;
-    padding: 0 50px;
-  }
   .hero .nav i {
     font-size: 1.8rem;
   }
   .hero .nav a {
-    margin: 5px 5px;
-    padding: 4px 15px;
+    margin: 5px 3px;
+    padding: 4px 10px;
     font-size: 0.9rem;
   }
   body .grid-container {
-    grid-template: repeat(6, minmax(20vh, 1fr))/repeat(3, minmax(5vw, 1fr));
-    padding: 0 30px 0;
-    gap: 15px;
+    grid-template-columns: 1fr;
+    padding: 0 5px 0;
+    gap: 10px;
+  }
+  body .grid-container .grid-item {
+    min-height: 60vh;
   }
   body .grid-container .photo-1 {
-    grid-area: 1/1/2/2;
-    background: url("pic_1.jpg") no-repeat center center/cover;
+    grid-area: auto;
   }
   body .grid-container .photo-2 {
-    grid-area: 1/2/3/4;
-    background: url("pic_2.jpg") no-repeat center center/cover;
+    grid-area: auto;
   }
   body .grid-container .photo-3 {
-    grid-area: 5/1/7/3;
-    background: url("pic_3.jpg") no-repeat bottom center/cover;
+    grid-area: auto;
   }
   body .grid-container .photo-4 {
-    grid-area: 2/1/4/2;
-    background: url("pic_4.jpg") no-repeat center center/cover;
+    grid-area: auto;
   }
   body .grid-container .photo-5 {
-    grid-area: 3/3/4/5;
-    background: url("pic_5.jpg") no-repeat center center/cover;
+    grid-area: auto;
   }
   body .grid-container .photo-6 {
-    grid-area: 3/2/5/3;
-    background: url("pic_6.jpg") no-repeat center center/cover;
+    grid-area: auto;
   }
   body .grid-container .photo-7 {
-    grid-area: 4/1/5/2;
-    background: url("pic_7.jpg") no-repeat center center/cover;
+    grid-area: auto;
   }
   body .grid-container .photo-8 {
-    grid-area: 4/3/6/4;
-    background: url("pic_8.jpg") no-repeat center center/cover;
+    grid-area: auto;
   }
   body .grid-container .photo-9 {
-    grid-area: 6/3/7/4;
-    background: url("pic_9.jpg") no-repeat center center/cover;
+    grid-area: auto;
   }
   body footer {
-    flex-direction: column;
     height: 110px;
-    padding: 20px 50px 50px 20px;
-  }
-  body footer i {
-    font-size: 1.5rem;
-    margin-top: 10px;
+    padding: 20px 5px 20px 5px;
+    font-size: 0.8rem;
   }
 }
 *,
@@ -160,12 +139,12 @@ body {
   line-height: 1.8;
   color: #333;
   background-color: #fdfdfd;
+  min-width: 280px;
 }
 
 a {
   text-decoration: none;
   color: #333;
-  /* display: inline-block; */
 }
 
 ul {
@@ -218,7 +197,6 @@ ul {
 }
 
 .hero {
-  /* width: 100%; */
   height: 90px;
 }
 
