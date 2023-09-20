@@ -1,1 +1,20 @@
-/*# sourceMappingURL=style.css.map */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+  color: var(--font-color);
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+  /* display: inline-block; */
+}/*# sourceMappingURL=style.css.map */
